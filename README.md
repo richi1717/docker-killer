@@ -8,7 +8,7 @@ Either copy and paste the text from `.docker-kill.sh` or clone this repo and mov
 Then run
 
 ```bash
-$ chmod 755 ~/.docker-kill.sh
+$ chmod 755 ~/.docker-kill.sh && alias dk="~/.docker-kill.sh"
 
 ```
 

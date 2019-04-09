@@ -32,15 +32,18 @@ else
   if [[ "${arr[0]}" != "" ]]
   then
   id=${arr[0]}
-  echo -e "${light_green}Found ${light_purple}$1${dark_gray} id: ${light_cyan}
+  echo -e "
+  ${light_green}Found ${light_purple}$1${dark_gray} id: ${light_cyan}
    "
 
-  echo -e "${dark_gray}Let Logging Commence!!!
+  echo -e "
+  ${dark_gray}Let Logging Commence!!!
 
-Run: ${light_blue}tail -f /var/log/httpd/error_log${no_color}
+  Then press ${light_blue}cmd + v${dark_gray} which will paste ${light_cyan}tail -f /var/log/httpd/error_log${dark_gray} ${no_color}
   "
 
   docker exec -it ${id} /bin/bash
+  echo tail -f /var/log/httpd/error_log | pbcopy
 
   else
   echo -e "${light_red}No 🐳🐳 ${light_blue}Docker${light_red} 🐳🐳 image for ${light_purple}$1${light_red} to log"

@@ -3,9 +3,13 @@
 Helpful scripts for use with Docker image by name.
 
 ## Installation
-[Clone](git clone git@github.com:richi1717/docker-scripts.git) this repo.  
-I recommend installing in root.  If you choose to install somewhere else then make adjustments to  
+
+Clone this repo. I recommend installing in root.  If you choose to install somewhere else then make adjustments to  
 your aliases.
+
+```bash
+$ git clone git@github.com:richi1717/docker-scripts.git
+```
 
 Then run
 

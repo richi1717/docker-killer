@@ -42,8 +42,8 @@ else
   Then press ${light_blue}cmd + v${dark_gray} which will paste ${light_cyan}tail -f /var/log/httpd/error_log${dark_gray} ${no_color}
   "
 
-  docker exec -it ${id} /bin/bash
   echo "tail -f /var/log/httpd/error_log" | pbcopy
+  docker exec -it ${id} /bin/bash
 
   else
   echo -e "${light_red}No 🐳🐳 ${light_blue}Docker${light_red} 🐳🐳 image for ${light_purple}$1${light_red} to log"

@@ -1,31 +1,40 @@
-# Docker Killer
+# Docker Scripts
 
-A script to kill a Docker image by name.
+Helpful scripts for use with Docker image by name.
 
 ## Installation
-Either copy and paste the text from `.docker-kill.sh` or clone this repo and move to `~`.
+[Clone](git clone git@github.com:richi1717/docker-scripts.git) this repo.  
+I recommend installing in root.  If you choose to install somewhere else then make adjustments to  
+your aliases.
 
 Then run
 
 ```bash
-$ chmod 755 ~/.docker-kill.sh && alias dk="~/.docker-kill.sh"
-
+$ chmod 755 docker-scripts/.docker-kill.sh && alias dk="~/docker-scripts/.docker-kill.sh"
+$ chmod 755 docker-scripts/.docker-log.sh && alias dl="~/docker-scripts/.docker-log.sh"
+```
+Or simplified
+```bash
+$ chmod 755 docker-scripts/.docker-kill.sh && chmod 755 docker-scripts/.docker-log.sh && alias dk="~/docker-scripts/.docker-kill.sh" && alias dl="~/docker-scripts/.docker-log.sh"
 ```
 
 ## Use
 
 Run
 ```bash
-$ ~/.docker-kill.sh YOUR_DOCKER_IMAGE_NAME_HERE
+$ dk YOUR_DOCKER_IMAGE_NAME_HERE
+$ dl YOUR_DOCKER_IMAGE_NAME_HERE
 ```
 
 It will then let you know it was successful if it finds the image name.  You don't have
-to pass the entire name.  IE say you have an image name of `supercalifloweristiceggspewalleydoses`
+to pass the entire name.  For example, say you have an image name of `supercalifloweristiceggspewalleydoses`
 
 ```bash
-$ ~/.docker-kill.sh supercali
+$ dk supercali
+$ dl supercali
 ```
 
 Just make sure the name does not match a different image name.
- 
+
+Feel free to make improvements or add new scripts.  
 

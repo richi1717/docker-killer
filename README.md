@@ -25,6 +25,7 @@ Run
 $ dk YOUR_DOCKER_IMAGE_NAME_HERE
 $ dl YOUR_DOCKER_IMAGE_NAME_HERE
 ```
+`dl` copies the string to your clipboard so you can press `cmd + v` to tail the logs as soon as the script is done.
 
 It will then let you know it was successful if it finds the image name.  You don't have
 to pass the entire name.  For example, say you have an image name of `supercalifloweristiceggspewalleydoses`

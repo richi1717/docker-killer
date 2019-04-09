@@ -35,6 +35,7 @@ else
    "
 
   docker kill ${id}
+  docker stop ${id}
 
   echo -e "
 🔫${dark_gray} Bang! Bang! 🔫
